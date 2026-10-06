@@ -5,12 +5,17 @@ import { sendResponse } from '../utils/response';
 import Joi from 'joi';
 
 const profileSchema = Joi.object({
-  name: Joi.string().min(2).max(100),
-  profileImage: Joi.string().uri().allow(''),
-  placementGoal: Joi.string().max(500),
-  targetDate: Joi.date().iso(),
-  dailyStudyTarget: Joi.number().min(0).max(1440), // minutes
-  phoneUsageLimit: Joi.number().min(0).max(1440), // minutes
+  name: Joi.string().min(1).max(100).allow('', null),
+  profileImage: Joi.string().allow('', null),
+  placementGoal: Joi.string().max(500).allow('', null),
+  targetDate: Joi.alternatives().try(Joi.date().iso(), Joi.string().allow('', null), Joi.allow(null)),
+  dailyStudyTarget: Joi.number().min(0).max(1440).allow(null),
+  phoneUsageLimit: Joi.number().min(0).max(1440).allow(null),
+  phoneUsageReal: Joi.number().min(0).max(1440).allow(null),
+  onboardingCompleted: Joi.boolean().allow(null),
+  lastPhoneSyncDate: Joi.string().allow('', null),
+  lastViewedSkillId: Joi.string().allow('', null),
+  lastViewedTopicId: Joi.string().allow('', null),
 });
 
 export const getProfile = async (req: AuthRequest, res: Response, next: NextFunction): Promise<void> => {
@@ -33,6 +38,11 @@ export const getProfile = async (req: AuthRequest, res: Response, next: NextFunc
         targetDate: null,
         dailyStudyTarget: null,
         phoneUsageLimit: null,
+        phoneUsageReal: 0,
+        onboardingCompleted: false,
+        lastPhoneSyncDate: new Date().toISOString(),
+        lastViewedSkillId: null,
+        lastViewedTopicId: null,
         createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString()
       };
@@ -71,8 +81,13 @@ export const updateProfile = async (req: AuthRequest, res: Response, next: NextF
         profileImage: value.profileImage || req.user?.picture || '',
         placementGoal: value.placementGoal || null,
         targetDate: value.targetDate || null,
-        dailyStudyTarget: value.dailyStudyTarget || null,
-        phoneUsageLimit: value.phoneUsageLimit || null,
+        dailyStudyTarget: value.dailyStudyTarget ?? null,
+        phoneUsageLimit: value.phoneUsageLimit ?? null,
+        phoneUsageReal: value.phoneUsageReal ?? 0,
+        onboardingCompleted: value.onboardingCompleted ?? false,
+        lastPhoneSyncDate: value.lastPhoneSyncDate || new Date().toISOString(),
+        lastViewedSkillId: value.lastViewedSkillId || null,
+        lastViewedTopicId: value.lastViewedTopicId || null,
         createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString()
       };
