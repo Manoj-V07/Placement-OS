@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ivory: #F8F7F3;
+  --color-surface: #FFFFFF;
+  --color-ink: #171717;
+  --color-muted: #6B6B6B;
+  --color-electric: #2563EB;
+  --color-pale: #DBEAFE;
+  --color-border-soft: #E5E7EB;
+  --color-success: #16A34A;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-space-grotesk);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-ivory);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-electric text-white px-4 py-2 rounded-xl transition-all duration-200 hover:bg-blue-700 hover:-translate-y-[1px] hover:shadow-sm font-medium;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-ink border border-border-soft px-4 py-2 rounded-xl transition-all duration-200 hover:bg-gray-50 font-medium;
+  }
+  
+  .btn-ghost {
+    @apply bg-transparent text-ink px-4 py-2 rounded-xl transition-all duration-200 hover:bg-gray-100 font-medium;
+  }
+  
+  .btn-destructive {
+    @apply bg-error text-white px-4 py-2 rounded-xl transition-all duration-200 hover:bg-red-600 font-medium;
+  }
+  
+  .card {
+    @apply bg-surface border border-border-soft rounded-2xl p-6 shadow-sm transition-all duration-250;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border border-border-soft bg-white text-ink focus:outline-none focus:border-electric focus:ring-1 focus:ring-electric transition-all duration-200;
+  }
+  
+  .label {
+    @apply block text-sm font-medium text-ink mb-1.5;
+  }
+}

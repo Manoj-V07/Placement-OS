@@ -1,2 +1,6 @@
 backend/node_modules/
 Backend-To-Do.md
+frontend/node_modules/
+Frontend-Visual-Spec.md
+backend/.env
+frontend/.env.local
