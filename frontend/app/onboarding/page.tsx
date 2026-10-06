@@ -117,8 +117,9 @@ export default function OnboardingPage() {
   }
 
   // Calculate days remaining preview
-  const daysLeft = targetDate
-    ? Math.max(0, Math.ceil((new Date(targetDate).getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24)))
+  const targetDateObj = targetDate ? new Date(targetDate) : null;
+  const daysLeft = targetDateObj && !isNaN(targetDateObj.getTime())
+    ? Math.max(0, Math.ceil((targetDateObj.getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24)))
     : null;
 
   return (

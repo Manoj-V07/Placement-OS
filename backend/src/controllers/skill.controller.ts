@@ -3,7 +3,30 @@ import { AuthRequest } from '../middlewares/auth.middleware';
 import { db } from '../config/firebase';
 import { sendResponse } from '../utils/response';
 import Joi from 'joi';
+import { GoogleGenerativeAI } from '@google/generative-ai';
+import Groq from 'groq-sdk';
 
+const callAI = async (prompt: string, fallbackToGroq = true): Promise<string> => {
+  try {
+    const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
+    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    const result = await model.generateContent(prompt);
+    const response = await result.response;
+    return response.text();
+  } catch (error: any) {
+    console.warn('Gemini API failed or limit reached:', error.message);
+    if (fallbackToGroq) {
+      console.log('Falling back to Groq API...');
+      const groq = new Groq({ apiKey: process.env.GROQ_API_KEY || '' });
+      const completion = await groq.chat.completions.create({
+        messages: [{ role: 'user', content: prompt }],
+        model: 'llama3-8b-8192',
+      });
+      return completion.choices[0]?.message?.content || '';
+    }
+    throw error;
+  }
+};
 const skillSchema = Joi.object({
   name: Joi.string().required().min(1).max(100),
   category: Joi.string().allow('').optional()
@@ -325,18 +348,26 @@ export const generateTopicsAI = async (req: AuthRequest, res: Response, next: Ne
 
     // Dynamic smart generation if no predefined curriculum found
     if (generatedTopics.length === 0) {
-      generatedTopics = [
-        `${skillName} Core Architecture & Fundamental Concepts`,
-        `${skillName} Setup, Tooling & Environment Configuration`,
-        `${skillName} Essential Syntax, Primitives & Data Structures`,
-        `${skillName} State Management & Control Flow Patterns`,
-        `${skillName} Modular Code Design & Componentization`,
-        `${skillName} Asynchronous Operations, I/O & Networking`,
-        `${skillName} Error Handling, Validation & Debugging`,
-        `${skillName} Testing, Mocking & Test-Driven Development`,
-        `${skillName} Performance Tuning, Memory & Optimization`,
-        `${skillName} Industry Best Practices & Top Interview Questions`
-      ];
+      const prompt = `Generate a syllabus for learning ${skillName} (${category || 'Engineering'}). Provide exactly 10 topic names in order from beginner to advanced. Return ONLY a JSON array of strings, nothing else.`;
+      try {
+        const text = await callAI(prompt);
+        const cleanText = text.replace(/```json/g, '').replace(/```/g, '').trim();
+        generatedTopics = JSON.parse(cleanText);
+      } catch (err) {
+        console.error('AI Generation failed, using fallback', err);
+        generatedTopics = [
+          `${skillName} Core Architecture & Fundamental Concepts`,
+          `${skillName} Setup, Tooling & Environment Configuration`,
+          `${skillName} Essential Syntax, Primitives & Data Structures`,
+          `${skillName} State Management & Control Flow Patterns`,
+          `${skillName} Modular Code Design & Componentization`,
+          `${skillName} Asynchronous Operations, I/O & Networking`,
+          `${skillName} Error Handling, Validation & Debugging`,
+          `${skillName} Testing, Mocking & Test-Driven Development`,
+          `${skillName} Performance Tuning, Memory & Optimization`,
+          `${skillName} Industry Best Practices & Top Interview Questions`
+        ];
+      }
     }
 
     sendResponse(res, 200, true, 'Topics generated successfully by AI', {
@@ -367,23 +398,32 @@ export const getTopicQuiz = async (req: AuthRequest, res: Response, next: NextFu
     const skillName = topic.skillName || 'Technical Skill';
 
     // Tailored questions based on topic
-    const questions = [
-      {
-        id: 1,
-        question: `In your own words, what is the core purpose of "${topicName}" in ${skillName}, and what problem does it solve in modern software engineering?`,
-        aspect: 'Core Concept & Definition'
-      },
-      {
-        id: 2,
-        question: `How does "${topicName}" work under the hood or in practical production code? Give a concrete example or explain the internal mechanics.`,
-        aspect: 'Implementation & Mechanics'
-      },
-      {
-        id: 3,
-        question: `What are the common edge cases, performance bottlenecks, or anti-patterns engineers encounter when working with "${topicName}", and how do you prevent them?`,
-        aspect: 'Edge Cases & Best Practices'
-      }
-    ];
+    let questions = [];
+    try {
+      const prompt = `Generate 3 technical interview questions for the topic "${topicName}" in the context of ${skillName}. Return ONLY a valid JSON array of objects with keys: "id" (1,2,3), "question" (the question string), and "aspect" (a very short string describing what it tests, e.g. "Core Concept").`;
+      const text = await callAI(prompt);
+      const cleanText = text.replace(/```json/g, '').replace(/```/g, '').trim();
+      questions = JSON.parse(cleanText);
+    } catch (err) {
+      console.error('AI Generation for quiz failed', err);
+      questions = [
+        {
+          id: 1,
+          question: `In your own words, what is the core purpose of "${topicName}" in ${skillName}, and what problem does it solve in modern software engineering?`,
+          aspect: 'Core Concept & Definition'
+        },
+        {
+          id: 2,
+          question: `How does "${topicName}" work under the hood or in practical production code? Give a concrete example or explain the internal mechanics.`,
+          aspect: 'Implementation & Mechanics'
+        },
+        {
+          id: 3,
+          question: `What are the common edge cases, performance bottlenecks, or anti-patterns engineers encounter when working with "${topicName}", and how do you prevent them?`,
+          aspect: 'Edge Cases & Best Practices'
+        }
+      ];
+    }
 
     sendResponse(res, 200, true, 'Quiz questions generated', {
       topicId,
@@ -422,35 +462,59 @@ export const evaluateTopicQuiz = async (req: AuthRequest, res: Response, next: N
     let totalScore = 0;
     const feedbacks: Array<{ question: string; answer: string; feedback: string; score: number }> = [];
 
-    answers.forEach((item, index) => {
-      const text = (item.answer || '').trim();
-      const wordCount = text.split(/\s+/).filter(Boolean).length;
+    try {
+      const prompt = `You are an expert technical interviewer evaluating a candidate's answers for the topic "${topicData.name}". 
+      Here are the questions and their answers: ${JSON.stringify(answers)}. 
+      For each answer, evaluate its technical accuracy, depth, and clarity. 
+      Return ONLY a valid JSON array of objects in the same order, with exactly two keys per object: "score" (integer 0-100) and "feedback" (a brief 1-2 sentence string explaining what was good and what was missing).`;
       
-      let qScore = 0;
-      let feedback = '';
-
-      if (wordCount < 4) {
-        qScore = 20;
-        feedback = 'Answer is too brief. Try elaborating with technical terminology and concrete examples.';
-      } else if (wordCount < 15) {
-        qScore = 55;
-        feedback = 'Good initial thought, but missing key technical details on internal mechanics.';
-      } else if (wordCount < 35) {
-        qScore = 80;
-        feedback = 'Strong explanation! Demonstrates clear understanding of the concepts and practical usage.';
-      } else {
-        qScore = 95;
-        feedback = 'Excellent, comprehensive answer! Solid technical depth, covering edge cases and architecture.';
-      }
-
-      totalScore += qScore;
-      feedbacks.push({
-        question: item.question,
-        answer: item.answer,
-        score: qScore,
-        feedback
+      const text = await callAI(prompt);
+      const cleanText = text.replace(/```json/g, '').replace(/```/g, '').trim();
+      const evaluated = JSON.parse(cleanText);
+      
+      answers.forEach((item, index) => {
+        const ev = evaluated[index] || {};
+        const score = ev.score ?? 50;
+        totalScore += score;
+        feedbacks.push({
+          question: item.question,
+          answer: item.answer,
+          score: score,
+          feedback: ev.feedback || 'Evaluated.'
+        });
       });
-    });
+    } catch (err) {
+      console.error('AI Evaluation failed', err);
+      answers.forEach((item, index) => {
+        const text = (item.answer || '').trim();
+        const wordCount = text.split(/\s+/).filter(Boolean).length;
+        
+        let qScore = 0;
+        let feedback = '';
+
+        if (wordCount < 4) {
+          qScore = 20;
+          feedback = 'Answer is too brief. Try elaborating with technical terminology and concrete examples.';
+        } else if (wordCount < 15) {
+          qScore = 55;
+          feedback = 'Good initial thought, but missing key technical details on internal mechanics.';
+        } else if (wordCount < 35) {
+          qScore = 80;
+          feedback = 'Strong explanation! Demonstrates clear understanding of the concepts and practical usage.';
+        } else {
+          qScore = 95;
+          feedback = 'Excellent, comprehensive answer! Solid technical depth, covering edge cases and architecture.';
+        }
+
+        totalScore += qScore;
+        feedbacks.push({
+          question: item.question,
+          answer: item.answer,
+          score: qScore,
+          feedback
+        });
+      });
+    }
 
     const averageScore = Math.round(totalScore / answers.length);
 

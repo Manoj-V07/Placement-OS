@@ -95,8 +95,9 @@ export default function ProfilePage() {
     }
   };
 
-  const daysLeft = profile?.targetDate
-    ? Math.max(0, Math.ceil((new Date(profile.targetDate).getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24)))
+  const targetDateObj = profile?.targetDate ? new Date(profile.targetDate) : null;
+  const daysLeft = targetDateObj && !isNaN(targetDateObj.getTime())
+    ? Math.max(0, Math.ceil((targetDateObj.getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24)))
     : null;
 
   const currentAvatar = profile?.profileImage || user?.photoURL || PRESET_AVATARS[0];
