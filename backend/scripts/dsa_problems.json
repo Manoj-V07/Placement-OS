@@ -1,0 +1,2172 @@
+[
+  {
+    "topic": "Arrays",
+    "section": "Easy",
+    "name": "Largest element in array",
+    "leetcodeNo": null,
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Easy",
+    "name": "Second largest element in array",
+    "leetcodeNo": null,
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Easy",
+    "name": "Check if array is sorted and rotated",
+    "leetcodeNo": "1752",
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Easy",
+    "name": "Remove duplicates from sorted array",
+    "leetcodeNo": "26",
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Easy",
+    "name": "Rotate array left by 1place",
+    "leetcodeNo": "189",
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Easy",
+    "name": "Rotate array left&right by k places",
+    "leetcodeNo": "189",
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Easy",
+    "name": "Move 0's to end",
+    "leetcodeNo": "283",
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Easy",
+    "name": "Linear search",
+    "leetcodeNo": "704",
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Easy",
+    "name": "Union of 2 sorted arrays",
+    "leetcodeNo": null,
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Easy",
+    "name": "Missing number",
+    "leetcodeNo": "268",
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Easy",
+    "name": "Max consecutive 1's",
+    "leetcodeNo": "485",
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Easy",
+    "name": "Longest subarray with given sum",
+    "leetcodeNo": null,
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Easy",
+    "name": "Find element present only once",
+    "leetcodeNo": "136",
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Medium",
+    "name": " sum problem",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Medium",
+    "name": "Sort 0 1 2",
+    "leetcodeNo": "75",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Medium",
+    "name": "Majority element",
+    "leetcodeNo": "169",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Medium",
+    "name": "Kadane's algorithm",
+    "leetcodeNo": "53",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Medium",
+    "name": "Number of subarray sum equal k",
+    "leetcodeNo": "560",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Medium",
+    "name": "Stock buy sell",
+    "leetcodeNo": "121",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Medium",
+    "name": "Rearange elements by sign",
+    "leetcodeNo": "2149",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Medium",
+    "name": "Next permutation",
+    "leetcodeNo": "31",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Medium",
+    "name": "Leaders in array",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Medium",
+    "name": "Longest consecutive subsequence",
+    "leetcodeNo": "128",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Medium",
+    "name": "Set matrix 0's",
+    "leetcodeNo": "73",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Medium",
+    "name": "Rotate matrix",
+    "leetcodeNo": "48",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Medium",
+    "name": "Spiral traversal",
+    "leetcodeNo": "54",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Hard",
+    "name": "Pascal triangle",
+    "leetcodeNo": "118",
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Hard",
+    "name": "Majority element 2",
+    "leetcodeNo": "229",
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Hard",
+    "name": " sum",
+    "leetcodeNo": null,
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Hard",
+    "name": "Largest subarray with 0sum",
+    "leetcodeNo": null,
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Hard",
+    "name": "Subarrays with xor k",
+    "leetcodeNo": null,
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Hard",
+    "name": "Merge overlapping subinterval",
+    "leetcodeNo": "56",
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Hard",
+    "name": "Merge 2 sorted array without space",
+    "leetcodeNo": "88",
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Hard",
+    "name": "Repeating and missing numbers",
+    "leetcodeNo": null,
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Hard",
+    "name": "Count inversions",
+    "leetcodeNo": null,
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Hard",
+    "name": "Reverse pairs",
+    "leetcodeNo": "493",
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Hard",
+    "name": "Maximum product subarray",
+    "leetcodeNo": "152",
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Arrays",
+    "section": "Hard",
+    "name": "Longest subarray with sum k containg +ves and -ves",
+    "leetcodeNo": null,
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "1D Arrays",
+    "name": "Find x in sorted array",
+    "leetcodeNo": "704",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "1D Arrays",
+    "name": "Implement lower bound",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "1D Arrays",
+    "name": "Implement lower upper bound",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "1D Arrays",
+    "name": "Search insert position",
+    "leetcodeNo": "35",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "1D Arrays",
+    "name": "Check If array is sorted",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "1D Arrays",
+    "name": "First and last position",
+    "leetcodeNo": "34",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "1D Arrays",
+    "name": "Number of occurences",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "1D Arrays",
+    "name": "Find peak element",
+    "leetcodeNo": "162",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "1D Arrays",
+    "name": "Search in rotated sorted array",
+    "leetcodeNo": "33",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "1D Arrays",
+    "name": "Search in rotated sorted array with duplicates",
+    "leetcodeNo": "81",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "2D Arrays",
+    "name": "Row with maximum number of 1's",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "2D Arrays",
+    "name": "Search in sorted matrix",
+    "leetcodeNo": "74",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "2D Arrays",
+    "name": "Search in rowwise sorted matrix",
+    "leetcodeNo": "240",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "2D Arrays",
+    "name": "Peak element in matrix",
+    "leetcodeNo": "1901",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "2D Arrays",
+    "name": "Matrix median",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "In Search Space",
+    "name": "Square root of number",
+    "leetcodeNo": "69",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "In Search Space",
+    "name": "Nth root of integer",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "In Search Space",
+    "name": "Koko eating banana",
+    "leetcodeNo": "875",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "In Search Space",
+    "name": "Minimum days to make boquets",
+    "leetcodeNo": "1482",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "In Search Space",
+    "name": "Find smallest integer",
+    "leetcodeNo": "1283",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "In Search Space",
+    "name": "Capacity to ship packages",
+    "leetcodeNo": "1011",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "In Search Space",
+    "name": "Aggresive cows",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "In Search Space",
+    "name": "Book allocation",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "In Search Space",
+    "name": "Split array largest",
+    "leetcodeNo": "410",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "In Search Space",
+    "name": "Kth missing number",
+    "leetcodeNo": "1539",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "In Search Space",
+    "name": "Gas station",
+    "leetcodeNo": "774",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search",
+    "section": "In Search Space",
+    "name": "Median of two sorted arrays",
+    "leetcodeNo": "4",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Strings",
+    "section": "Easy",
+    "name": "Remove outer parenthesis",
+    "leetcodeNo": "1021",
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Strings",
+    "section": "Easy",
+    "name": "Reverse words in string",
+    "leetcodeNo": "151",
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Strings",
+    "section": "Easy",
+    "name": "Largest odd number in string",
+    "leetcodeNo": "1903",
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Strings",
+    "section": "Easy",
+    "name": "Longest common prefix",
+    "leetcodeNo": "14",
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Strings",
+    "section": "Easy",
+    "name": "Isomorphic string",
+    "leetcodeNo": "205",
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Strings",
+    "section": "Easy",
+    "name": "Check for rotated string",
+    "leetcodeNo": "796",
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Strings",
+    "section": "Easy",
+    "name": "Valid anagram",
+    "leetcodeNo": "242",
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Strings",
+    "section": "Medium",
+    "name": "Sort characters by frequency",
+    "leetcodeNo": "451",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Strings",
+    "section": "Medium",
+    "name": "Max nesting depth of parenthesis",
+    "leetcodeNo": "1614",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Strings",
+    "section": "Medium",
+    "name": "Roman to Integer",
+    "leetcodeNo": "13",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Strings",
+    "section": "Medium",
+    "name": "Implement atoi",
+    "leetcodeNo": "8",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Strings",
+    "section": "Medium",
+    "name": "Count the number of substrings with k unique characters",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Strings",
+    "section": "Medium",
+    "name": "Longest palindromic substring",
+    "leetcodeNo": "5",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Strings",
+    "section": "Medium",
+    "name": "Sum of beauty of all substrings",
+    "leetcodeNo": "1781",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Single Linked List",
+    "name": "Intro to linked list",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Single Linked List",
+    "name": "Inserting node to linked list",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Single Linked List",
+    "name": "Deleting node in linked list",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Single Linked List",
+    "name": "Count the number of nodes linked list",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Single Linked List",
+    "name": "Search element in linked list",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Doubly Linked List",
+    "name": "Introduction to Double LL",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Doubly Linked List",
+    "name": "Insert node in DLL",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Doubly Linked List",
+    "name": "Delete node in DLL",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Doubly Linked List",
+    "name": "Reverse DLL",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Medium Problems of LL",
+    "name": "Find mid of LL",
+    "leetcodeNo": "876",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Medium Problems of LL",
+    "name": "Reverse LL",
+    "leetcodeNo": "206",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Medium Problems of LL",
+    "name": "Detect loop in LL",
+    "leetcodeNo": "141",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Medium Problems of LL",
+    "name": "Start of cycle in LL",
+    "leetcodeNo": "142",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Medium Problems of LL",
+    "name": "Count nodes in loop",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Medium Problems of LL",
+    "name": "Check for palindrome LL",
+    "leetcodeNo": "234",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Medium Problems of LL",
+    "name": "Odd even LL",
+    "leetcodeNo": "328",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Medium Problems of LL",
+    "name": "Delete nth node from back",
+    "leetcodeNo": "19",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Medium Problems of LL",
+    "name": "Delete mid of LL",
+    "leetcodeNo": "2095",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Medium Problems of LL",
+    "name": "Sort LL",
+    "leetcodeNo": "148",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Medium Problems of LL",
+    "name": "Sort 0 1 2 in LL",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Medium Problems of LL",
+    "name": "Add 1 to LL",
+    "leetcodeNo": "369",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Medium Problems of LL",
+    "name": "Add two LL",
+    "leetcodeNo": "2",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Medium Problems of DLL",
+    "name": "Delete nodes from dll",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Medium Problems of DLL",
+    "name": "Pair sum in dll",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Medium Problems of DLL",
+    "name": "Remove duplicates from dll",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Hard Problems of LL",
+    "name": "Reverse k node in groups",
+    "leetcodeNo": "25",
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Hard Problems of LL",
+    "name": "Rotate LL k times",
+    "leetcodeNo": "61",
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Hard Problems of LL",
+    "name": "Copy LL with random pointers",
+    "leetcodeNo": "138",
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Linked List",
+    "section": "Hard Problems of LL",
+    "name": "Flatten LL",
+    "leetcodeNo": "430",
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Recursion",
+    "section": "Get Strong Hold",
+    "name": "Implement atoi via recursion",
+    "leetcodeNo": "8",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Recursion",
+    "section": "Get Strong Hold",
+    "name": "Count good numbers",
+    "leetcodeNo": "1922",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Recursion",
+    "section": "Get Strong Hold",
+    "name": "Reverse stack using recursion",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Recursion",
+    "section": "Get Strong Hold",
+    "name": "Sort stack using recursion",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Recursion",
+    "section": "Subsequences Pattern Genereate all valid",
+    "name": "parenthesis",
+    "leetcodeNo": "22",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Recursion",
+    "section": "Subsequences Pattern Power",
+    "name": "set",
+    "leetcodeNo": "78",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Recursion",
+    "section": "Subsequences Pattern Count distinct",
+    "name": "substrings",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Recursion",
+    "section": "Subsequences Pattern Count subsets with sum equal to",
+    "name": "k",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Recursion",
+    "section": "Subsequences Pattern Subset",
+    "name": "1",
+    "leetcodeNo": "78",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Recursion",
+    "section": "Subsequences Pattern Subset",
+    "name": "2",
+    "leetcodeNo": "90",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Recursion",
+    "section": "Subsequences Pattern Combination Sum",
+    "name": "1",
+    "leetcodeNo": "39",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Recursion",
+    "section": "Subsequences Pattern Combination Sum",
+    "name": "2",
+    "leetcodeNo": "40",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Recursion",
+    "section": "Subsequences Pattern Combination Sum",
+    "name": "3",
+    "leetcodeNo": "216",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Recursion",
+    "section": "Subsequences Pattern Letter combinations of",
+    "name": "phone",
+    "leetcodeNo": "17",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Recursion",
+    "section": "Try Out All Combos Palindrome",
+    "name": "partioning",
+    "leetcodeNo": "131",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Recursion",
+    "section": "Try Out All Combos Word search in",
+    "name": "grid",
+    "leetcodeNo": "79",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Recursion",
+    "section": "Try Out All Combos Rat in",
+    "name": "maze",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Recursion",
+    "section": "Try Out All Combos M coloring",
+    "name": "problem",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Recursion",
+    "section": "Try Out All Combos N",
+    "name": "queens",
+    "leetcodeNo": "51",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Recursion",
+    "section": "Try Out All Combos Word",
+    "name": "Break",
+    "leetcodeNo": "139",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Recursion",
+    "section": "Try Out All Combos Sudoku",
+    "name": "solver",
+    "leetcodeNo": "37",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Bit Manipulation",
+    "section": "Learn Bit Manipulation Bit",
+    "name": "Manipulation",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Bit Manipulation",
+    "section": "Learn Bit Manipulation Check for the ith",
+    "name": "bit",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Bit Manipulation",
+    "section": "Learn Bit Manipulation Check for odd",
+    "name": "even",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Bit Manipulation",
+    "section": "Learn Bit Manipulation Check for the power of",
+    "name": "2",
+    "leetcodeNo": "231",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Bit Manipulation",
+    "section": "Learn Bit Manipulation Set the righmost unset",
+    "name": "bit",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Bit Manipulation",
+    "section": "Learn Bit Manipulation Swap two numbers without temporary",
+    "name": "variable",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Bit Manipulation",
+    "section": "Learn Bit Manipulation Divide two numbers using bit",
+    "name": "maipulation",
+    "leetcodeNo": "29",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Bit Manipulation",
+    "section": "Learn Bit Manipulation Count set bit from numbers 1 to",
+    "name": "n",
+    "leetcodeNo": "338",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Bit Manipulation",
+    "section": "Interview Problems Minimum bit",
+    "name": "flips",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Bit Manipulation",
+    "section": "Interview Problems Exceptionally",
+    "name": "odd",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Bit Manipulation",
+    "section": "Interview Problems XOR of numbers from L to",
+    "name": "R",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Bit Manipulation",
+    "section": "Advanced Maths Prime factors of",
+    "name": "number",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Bit Manipulation",
+    "section": "Advanced Maths All divisors of",
+    "name": "number",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Bit Manipulation",
+    "section": "Advanced Maths Sieve of",
+    "name": "Eratosthenes",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Bit Manipulation",
+    "section": "Advanced Maths Prime factorization using",
+    "name": "Sieve",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Bit Manipulation",
+    "section": "Advanced Maths Fast",
+    "name": "Power",
+    "leetcodeNo": "50",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Learning Implement stack using",
+    "name": "array",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Learning Implement queue using",
+    "name": "array",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Learning Implement stack using",
+    "name": "queue",
+    "leetcodeNo": "225",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Learning Implement queue using",
+    "name": "stacks",
+    "leetcodeNo": "232",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Learning Implement stack using linked",
+    "name": "list",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Learning Valid",
+    "name": "Parenthesis",
+    "leetcodeNo": "20",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Learning Implement min",
+    "name": "stack",
+    "leetcodeNo": "155",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Infix / Postfix / Prefix Infix to",
+    "name": "postfix",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Infix / Postfix / Prefix Infix to",
+    "name": "prefix",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Infix / Postfix / Prefix Prefix to",
+    "name": "infix",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Infix / Postfix / Prefix Prefix to",
+    "name": "postfix",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Infix / Postfix / Prefix Postfix to",
+    "name": "infix",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Infix / Postfix / Prefix Postfix to",
+    "name": "prefix",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Monotonic Stack & Queue Next Greater",
+    "name": "Element",
+    "leetcodeNo": "496",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Monotonic Stack & Queue Next Greater Element",
+    "name": "2",
+    "leetcodeNo": "503",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Monotonic Stack & Queue Previous Smaller",
+    "name": "Element",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Monotonic Stack & Queue Trapping",
+    "name": "Rainwater",
+    "leetcodeNo": "42",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Monotonic Stack & Queue Sum of subarray",
+    "name": "minimum",
+    "leetcodeNo": "907",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Monotonic Stack & Queue Sum of range of all",
+    "name": "subarray",
+    "leetcodeNo": "2104",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Monotonic Stack & Queue Remove K",
+    "name": "elements",
+    "leetcodeNo": "402",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Monotonic Stack & Queue Largest Rectangle in",
+    "name": "Histogram",
+    "leetcodeNo": "84",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Monotonic Stack & Queue Maximal Rectangle in binary",
+    "name": "matrix",
+    "leetcodeNo": "85",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Monotonic Stack & Queue Asteroids",
+    "name": "Collision",
+    "leetcodeNo": "735",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Implementation Sliding window",
+    "name": "maximum",
+    "leetcodeNo": "239",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Implementation Stock span",
+    "name": "problem",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Implementation Celebrity",
+    "name": "Problem",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Stack & Queues",
+    "section": "Implementation LRU",
+    "name": "Cache",
+    "leetcodeNo": "146",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Sliding Window",
+    "section": "Medium Longest Substring Without Repeating",
+    "name": "Characters",
+    "leetcodeNo": "3",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Sliding Window",
+    "section": "Medium Max Consecutive",
+    "name": "1's",
+    "leetcodeNo": "485",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Sliding Window",
+    "section": "Medium Fruit into",
+    "name": "Baskets",
+    "leetcodeNo": "904",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Sliding Window",
+    "section": "Medium Longest Repeating",
+    "name": "Character",
+    "leetcodeNo": "424",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Sliding Window",
+    "section": "Medium Binary Subarrays with",
+    "name": "Sum",
+    "leetcodeNo": "930",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Sliding Window",
+    "section": "Medium Count the number of nice",
+    "name": "subarrays",
+    "leetcodeNo": "1248",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Sliding Window",
+    "section": "Medium Number of Substrings Containing all 3",
+    "name": "characters",
+    "leetcodeNo": "1358",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Sliding Window",
+    "section": "Medium Maximum Points you can obtaln form the",
+    "name": "card",
+    "leetcodeNo": "1423",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Sliding Window",
+    "section": "Hard Longest Substring with at most K unique",
+    "name": "characters",
+    "leetcodeNo": null,
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Sliding Window",
+    "section": "Hard Count the number of substrings with exactly K unique",
+    "name": "characters",
+    "leetcodeNo": null,
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Sliding Window",
+    "section": "Hard Minimum Window",
+    "name": "Substring",
+    "leetcodeNo": "76",
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Heaps",
+    "section": "Learning Implement min",
+    "name": "heap",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Heaps",
+    "section": "Learning Check if array is",
+    "name": "heap",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Heaps",
+    "section": "Learning Convert min heap to max",
+    "name": "heap",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Heaps",
+    "section": "Medium Kth largest",
+    "name": "element",
+    "leetcodeNo": "215",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Heaps",
+    "section": "Medium Kth smallest",
+    "name": "element",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Heaps",
+    "section": "Medium Merge K sorted",
+    "name": "arrays",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Heaps",
+    "section": "Medium Merge K sorted",
+    "name": "Lists",
+    "leetcodeNo": "23",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Heaps",
+    "section": "Medium Arrange by",
+    "name": "rank",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Heaps",
+    "section": "Medium Task",
+    "name": "Scheduler",
+    "leetcodeNo": "621",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Heaps",
+    "section": "Medium Divide array into sets of K consecutive",
+    "name": "number",
+    "leetcodeNo": "1296",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Heaps",
+    "section": "Hard Design",
+    "name": "Twitter",
+    "leetcodeNo": "355",
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Heaps",
+    "section": "Hard Minimum Cost to join n",
+    "name": "ropes",
+    "leetcodeNo": null,
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Heaps",
+    "section": "Hard Kth largest element in",
+    "name": "stream",
+    "leetcodeNo": "703",
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Heaps",
+    "section": "Hard Maximum K sum",
+    "name": "combinations",
+    "leetcodeNo": null,
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Heaps",
+    "section": "Hard Median in a",
+    "name": "stream",
+    "leetcodeNo": "295",
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Heaps",
+    "section": "Hard Top K frequent",
+    "name": "elements",
+    "leetcodeNo": "347",
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Greedy",
+    "section": "Easy Assign",
+    "name": "Cookies",
+    "leetcodeNo": "455",
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Greedy",
+    "section": "Easy Fractional",
+    "name": "Knapsack",
+    "leetcodeNo": null,
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Greedy",
+    "section": "Easy Lemonade",
+    "name": "Exchange",
+    "leetcodeNo": "860",
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Greedy",
+    "section": "Easy Valid Parenthesis",
+    "name": "String",
+    "leetcodeNo": "678",
+    "difficulty": "Easy"
+  },
+  {
+    "topic": "Greedy",
+    "section": "Medium N Meetings in one",
+    "name": "room",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Greedy",
+    "section": "Medium Jump",
+    "name": "Game",
+    "leetcodeNo": "55",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Greedy",
+    "section": "Medium Jump Game",
+    "name": "2",
+    "leetcodeNo": "45",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Greedy",
+    "section": "Medium Minimum",
+    "name": "Platforms",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Greedy",
+    "section": "Medium Job Sequencing",
+    "name": "Problem",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Greedy",
+    "section": "Medium",
+    "name": "Candy",
+    "leetcodeNo": "135",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Greedy",
+    "section": "Medium Insert",
+    "name": "Interval",
+    "leetcodeNo": "57",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Trees",
+    "section": "Traversals Introduction to",
+    "name": "trees",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Trees",
+    "section": "Traversals Binary Tree",
+    "name": "representation",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Trees",
+    "section": "Traversals Preorder",
+    "name": "Traversal",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Trees",
+    "section": "Traversals Inorder",
+    "name": "Traversal",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Trees",
+    "section": "Traversals Postorder",
+    "name": "Traversal",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Trees",
+    "section": "Traversals Level Order",
+    "name": "Traversal",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Trees",
+    "section": "Medium Height of binary",
+    "name": "tree",
+    "leetcodeNo": "104",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Trees",
+    "section": "Medium Balanced Binary",
+    "name": "Tree",
+    "leetcodeNo": "110",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Trees",
+    "section": "Medium Diameter of Binary",
+    "name": "Tree",
+    "leetcodeNo": "543",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Trees",
+    "section": "Medium Maximum Path",
+    "name": "Sum",
+    "leetcodeNo": "124",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Trees",
+    "section": "Medium Same",
+    "name": "Tree",
+    "leetcodeNo": "100",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Trees",
+    "section": "Medium Zig-Zag",
+    "name": "Traversal",
+    "leetcodeNo": "103",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Trees",
+    "section": "Hard All root to leaf",
+    "name": "paths",
+    "leetcodeNo": null,
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Binary Trees",
+    "section": "Hard Lowest Common",
+    "name": "Ancestor",
+    "leetcodeNo": "236",
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Binary Trees",
+    "section": "Hard Max width of binary",
+    "name": "tree",
+    "leetcodeNo": "662",
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Binary Trees",
+    "section": "Hard Check children sum",
+    "name": "property",
+    "leetcodeNo": null,
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Binary Trees",
+    "section": "Hard All nodes at distance",
+    "name": "K",
+    "leetcodeNo": "863",
+    "difficulty": "Hard"
+  },
+  {
+    "topic": "Binary Search Trees",
+    "section": "Concept Intro to",
+    "name": "BST",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search Trees",
+    "section": "Concept Search in",
+    "name": "BST",
+    "leetcodeNo": "700",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search Trees",
+    "section": "Concept Minimum value in",
+    "name": "BST",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search Trees",
+    "section": "Practice Problems Ceil in",
+    "name": "BST",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search Trees",
+    "section": "Practice Problems Floor in",
+    "name": "BST",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search Trees",
+    "section": "Practice Problems Insert into",
+    "name": "BST",
+    "leetcodeNo": "701",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search Trees",
+    "section": "Practice Problems Delete from",
+    "name": "BST",
+    "leetcodeNo": "450",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search Trees",
+    "section": "Practice Problems Kth smallest element in",
+    "name": "BST",
+    "leetcodeNo": "230",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search Trees",
+    "section": "Practice Problems Validate",
+    "name": "BST",
+    "leetcodeNo": "98",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Binary Search Trees",
+    "section": "Practice Problems LCA in",
+    "name": "BST",
+    "leetcodeNo": "235",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "Learning Count the number of",
+    "name": "graphs",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "Learning Graph",
+    "name": "Representation",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "Learning",
+    "name": "BFS",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "Learning",
+    "name": "DFS",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "Traversal Problems Count the number of",
+    "name": "provinces",
+    "leetcodeNo": "547",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "Traversal Problems Rotten",
+    "name": "Oranges",
+    "leetcodeNo": "994",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "Traversal Problems Flood-Fill",
+    "name": "Algorithm",
+    "leetcodeNo": "733",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "Traversal Problems Detect Cycle in Undirected",
+    "name": "Graph",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "Traversal Problems",
+    "name": "Matrix",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "Traversal Problems Surrounded",
+    "name": "Regions",
+    "leetcodeNo": "130",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "Topo Sort Problems Topological",
+    "name": "Sorting",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "Topo Sort Problems Kahn's",
+    "name": "Algorithm",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "Topo Sort Problems Course Scheduler",
+    "name": "1",
+    "leetcodeNo": "207",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "Topo Sort Problems Course Scheduler",
+    "name": "2",
+    "leetcodeNo": "210",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "Topo Sort Problems Find Eventual Safe",
+    "name": "State",
+    "leetcodeNo": "802",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "Topo Sort Problems Alien",
+    "name": "Dictonary",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "Shortest Path Problems Shortest path in Undirected Graph having unit",
+    "name": "distance",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "Shortest Path Problems Shortest path in",
+    "name": "DAG",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "Shortest Path Problems Dijkstra's",
+    "name": "Algorithm",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "Shortest Path Problems Shortest Path in binary",
+    "name": "matrix",
+    "leetcodeNo": "1091",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "Shortest Path Problems Path with minimum",
+    "name": "effort",
+    "leetcodeNo": "1631",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "MST Problems Prim's",
+    "name": "Algorithm",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "MST Problems Kruskal's",
+    "name": "Algorithm",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "MST Problems Number of Operations to make",
+    "name": "Network",
+    "leetcodeNo": "1319",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "MST Problems Most stones",
+    "name": "removed",
+    "leetcodeNo": "947",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "MST Problems Account",
+    "name": "Merge",
+    "leetcodeNo": "721",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "MST Problems Number of islands",
+    "name": "2",
+    "leetcodeNo": "305",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "Other Algorithms Bridges in",
+    "name": "graph",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Graphs",
+    "section": "Other Algorithms Strongly Connected",
+    "name": "Components",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "Intro to DP Find the nth fibonacci",
+    "name": "number",
+    "leetcodeNo": "509",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "1D DP Climbing",
+    "name": "Stairs",
+    "leetcodeNo": "70",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "1D DP Frog",
+    "name": "Jump",
+    "leetcodeNo": "403",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "1D DP Frog K",
+    "name": "Jumps",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "1D DP House",
+    "name": "Robber",
+    "leetcodeNo": "198",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "1D DP House Robber",
+    "name": "2",
+    "leetcodeNo": "213",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "2D DP Ninja",
+    "name": "Training",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "2D DP Unique",
+    "name": "Paths",
+    "leetcodeNo": "62",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "2D DP Unique Paths",
+    "name": "2",
+    "leetcodeNo": "63",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "2D DP Minimum Path",
+    "name": "Sum",
+    "leetcodeNo": "64",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "2D DP Minimum Path in",
+    "name": "Triangle",
+    "leetcodeNo": "120",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "2D DP Minimum Falling Path",
+    "name": "Sum",
+    "leetcodeNo": "931",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on Subsequences Subset sum equal to",
+    "name": "k",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on Subsequences Partition array in two equal sum",
+    "name": "subsets",
+    "leetcodeNo": "416",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on Subsequences Minimum Sum",
+    "name": "Partition",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on Subsequences Count number of subsets with sum",
+    "name": "K",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on Subsequences Partition with given",
+    "name": "difference",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on Strings Longest Common",
+    "name": "Subsequence",
+    "leetcodeNo": "1143",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on Strings Print the",
+    "name": "LCS",
+    "leetcodeNo": "1143",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on Strings Longest Common",
+    "name": "Substring",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on Strings Longest Palindromic",
+    "name": "Subsequence",
+    "leetcodeNo": "516",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on Strings Minimum steps to make string",
+    "name": "palindrome",
+    "leetcodeNo": "1312",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on Stocks Best time to buy and sell",
+    "name": "stocks",
+    "leetcodeNo": "121",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on Stocks Best time to buy and sell stock",
+    "name": "2",
+    "leetcodeNo": "122",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on Stocks Best time to buy and sell stock upto 2",
+    "name": "transaction",
+    "leetcodeNo": "123",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on Stocks Best time to buy and sell stock uoto k",
+    "name": "transaction",
+    "leetcodeNo": "188",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on LIS Longest Increasing",
+    "name": "Subsequence",
+    "leetcodeNo": "300",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on LIS Print",
+    "name": "LIS",
+    "leetcodeNo": "300",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on LIS Largest Divisible",
+    "name": "Subset",
+    "leetcodeNo": "368",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on LIS Longest Bitonic",
+    "name": "Subsequence",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on LIS Number of",
+    "name": "LIS",
+    "leetcodeNo": "673",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on Partition",
+    "name": "MCM",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on Partition Minimum cost to cut",
+    "name": "stick",
+    "leetcodeNo": "1547",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on Partition Burst",
+    "name": "Ballons",
+    "leetcodeNo": "312",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on Partition Palindorme Partionting",
+    "name": "2",
+    "leetcodeNo": "132",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on Partition Partition array for maximum",
+    "name": "sum",
+    "leetcodeNo": "1043",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on Squares Maximal",
+    "name": "Square",
+    "leetcodeNo": "221",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Dynamic Programming",
+    "section": "DP on Squares Count square",
+    "name": "submatrices",
+    "leetcodeNo": "1277",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Tries",
+    "section": "Theory Implement Trie (Prefix",
+    "name": "Tree)",
+    "leetcodeNo": "208",
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Tries",
+    "section": "Problems Implement Trie",
+    "name": "2",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Tries",
+    "section": "Problems Complete",
+    "name": "String",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Tries",
+    "section": "Problems Count distinct",
+    "name": "subsitrings",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Tries",
+    "section": "Problems Bitwise basic",
+    "name": "operations",
+    "leetcodeNo": null,
+    "difficulty": "Medium"
+  },
+  {
+    "topic": "Tries",
+    "section": "Problems Maximum XOR of two",
+    "name": "numbers",
+    "leetcodeNo": "421",
+    "difficulty": "Medium"
+  }
+]
