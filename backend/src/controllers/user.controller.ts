@@ -16,6 +16,7 @@ const profileSchema = Joi.object({
   lastPhoneSyncDate: Joi.string().allow('', null),
   lastViewedSkillId: Joi.string().allow('', null),
   lastViewedTopicId: Joi.string().allow('', null),
+  plannerStartDate: Joi.string().pattern(/^\d{4}-\d{2}-\d{2}$/).allow('', null).optional(),
 });
 
 export const getProfile = async (req: AuthRequest, res: Response, next: NextFunction): Promise<void> => {
@@ -43,6 +44,7 @@ export const getProfile = async (req: AuthRequest, res: Response, next: NextFunc
         lastPhoneSyncDate: new Date().toISOString(),
         lastViewedSkillId: null,
         lastViewedTopicId: null,
+        plannerStartDate: null,
         createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString()
       };
@@ -88,6 +90,7 @@ export const updateProfile = async (req: AuthRequest, res: Response, next: NextF
         lastPhoneSyncDate: value.lastPhoneSyncDate || new Date().toISOString(),
         lastViewedSkillId: value.lastViewedSkillId || null,
         lastViewedTopicId: value.lastViewedTopicId || null,
+        plannerStartDate: value.plannerStartDate || null,
         createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString()
       };
@@ -96,6 +99,15 @@ export const updateProfile = async (req: AuthRequest, res: Response, next: NextF
       sendResponse(res, 201, true, 'Profile created successfully', createdDoc.data());
       return;
     } else {
+      const existingData = userDoc.data();
+      if (existingData?.plannerStartDate && value.plannerStartDate && value.plannerStartDate !== existingData.plannerStartDate) {
+        sendResponse(res, 400, false, 'Start date has already been set and cannot be changed.');
+        return;
+      }
+      if (existingData?.plannerStartDate && 'plannerStartDate' in value) {
+        delete value.plannerStartDate;
+      }
+
       const updates = {
         ...value,
         updatedAt: new Date().toISOString()

@@ -28,6 +28,7 @@ export interface UserProfile {
   lastPhoneSyncDate?: string;
   lastViewedSkillId?: string | null;
   lastViewedTopicId?: string | null;
+  plannerStartDate?: string | null;
   createdAt?: string;
 }
 

@@ -4,7 +4,7 @@ import { useAuth } from "../../context/AuthContext";
 import { useRouter, usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { LayoutDashboard, Compass, User, LogOut, Menu, X, Code2 } from "lucide-react";
+import { LayoutDashboard, Compass, User, LogOut, Menu, X, Code2, Calendar } from "lucide-react";
 
 export default function DashboardLayout({
   children,
@@ -140,6 +140,17 @@ export default function DashboardLayout({
           >
             <User className={`w-5 h-5 ${pathname === "/dashboard/profile" ? "text-indigo-600" : "text-slate-400"}`} />
             Profile & Goals
+          </Link>
+          <Link
+            href="/dashboard/planner"
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${
+              pathname?.startsWith("/dashboard/planner")
+                ? "bg-indigo-50 text-indigo-700 shadow-sm border border-indigo-100 font-semibold"
+                : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+            }`}
+          >
+            <Calendar className={`w-5 h-5 ${pathname?.startsWith("/dashboard/planner") ? "text-indigo-600" : "text-slate-400"}`} />
+            Daily Planner
           </Link>
         </nav>
 
