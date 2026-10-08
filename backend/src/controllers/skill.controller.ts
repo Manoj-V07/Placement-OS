@@ -20,7 +20,7 @@ const callAI = async (prompt: string, fallbackToGroq = true): Promise<string> =>
       const groq = new Groq({ apiKey: process.env.GROQ_API_KEY || '' });
       const completion = await groq.chat.completions.create({
         messages: [{ role: 'user', content: prompt }],
-        model: 'llama3-8b-8192',
+        model: 'openai/gpt-oss-120b',
       });
       return completion.choices[0]?.message?.content || '';
     }
