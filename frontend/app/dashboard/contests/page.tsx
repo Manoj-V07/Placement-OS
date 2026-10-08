@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
+import { Toaster, toast } from "react-hot-toast";
 import api from "../../../lib/api";
 import { 
   Trophy, 
@@ -436,6 +437,16 @@ export default function ContestsPage() {
 
   // Generate a new AI contest with multi-step synthesis indicator
   const handleGenerateContest = async () => {
+    const now = new Date();
+    const startOfWeek = new Date(now.setDate(now.getDate() - now.getDay()));
+    startOfWeek.setHours(0, 0, 0, 0);
+    const contestsThisWeek = aiContests.filter(c => new Date(c.createdAt) >= startOfWeek);
+    
+    if (contestsThisWeek.length >= 2) {
+      toast.error("You can only attend two contests per week.");
+      return;
+    }
+
     setIsGeneratingContest(true);
     setGenerationStep(1);
 
@@ -459,7 +470,7 @@ export default function ContestsPage() {
       setIsGeneratingContest(false);
       setGenerationStep(0);
       console.error("Contest generation failed:", err);
-      alert("Failed to generate AI contest. Please check backend connection.");
+      toast.error("Failed to generate AI contest. Please check backend connection.");
     }
   };
 
@@ -832,6 +843,7 @@ export default function ContestsPage() {
 
   return (
     <div className="space-y-6 max-w-7xl mx-auto pb-16 animate-in fade-in">
+      <Toaster position="bottom-right" />
       {/* Top Header Card */}
       <div className="flex flex-col md:flex-row gap-6 justify-between items-start md:items-center bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
         <div className="flex items-center gap-4">
@@ -911,20 +923,20 @@ export default function ContestsPage() {
       {activeTab === "arena" && (
         <div className="space-y-6">
           {/* Hero Banner: Generate Contest */}
-          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-950 via-slate-900 to-slate-950 p-8 text-white border border-indigo-900/40 shadow-xl">
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-50 via-white to-slate-50 p-8 text-slate-900 border border-indigo-100 shadow-xl">
             <div className="absolute top-0 right-0 -mt-12 -mr-12 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
             <div className="absolute bottom-0 left-1/3 -mb-12 w-80 h-80 bg-violet-500/10 rounded-full blur-3xl pointer-events-none" />
 
             <div className="relative z-10 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
               <div className="max-w-2xl space-y-3">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/20 border border-indigo-400/30 text-indigo-300 text-xs font-semibold uppercase tracking-wider">
-                  <ShieldAlert className="w-3.5 h-3.5 text-indigo-400" />
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-100 border border-indigo-200 text-indigo-700 text-xs font-semibold uppercase tracking-wider">
+                  <ShieldAlert className="w-3.5 h-3.5 text-indigo-600" />
                   Strict Anti-Malpractice Rules Active
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                   90-Minute Sequential Contest Arena
                 </h2>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Synthesized from your <strong>last 5 DSA Planner</strong>, <strong>5 LeetCode</strong>, and <strong>5 CodeChef</strong> items. 
                   Enforces <strong>mandatory fullscreen mode</strong> (max 3 exits allowed) and <strong>sequential fixed timing</strong>:
                 </p>
@@ -1064,7 +1076,7 @@ export default function ContestsPage() {
 
                         return (
                           <div
-                            key={prob.id}
+                            key={`${prob.id}-${idx}`}
                             className={`p-4 rounded-2xl border transition-all ${
                               isSolved
                                 ? "bg-emerald-50/60 border-emerald-200"
