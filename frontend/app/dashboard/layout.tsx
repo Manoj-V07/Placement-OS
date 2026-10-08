@@ -4,7 +4,7 @@ import { useAuth } from "../../context/AuthContext";
 import { useRouter, usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { LayoutDashboard, Compass, User, LogOut, Menu, X, Code2, Calendar } from "lucide-react";
+import { LayoutDashboard, Compass, User, LogOut, Menu, X, Code2, Calendar, Trophy } from "lucide-react";
 
 export default function DashboardLayout({
   children,
@@ -129,6 +129,17 @@ export default function DashboardLayout({
           >
             <Code2 className={`w-5 h-5 ${pathname?.startsWith("/dashboard/dsa") ? "text-indigo-600" : "text-slate-400"}`} />
             DSA Tracker
+          </Link>
+          <Link
+            href="/dashboard/contests"
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${
+              pathname?.startsWith("/dashboard/contests")
+                ? "bg-indigo-50 text-indigo-700 shadow-sm border border-indigo-100 font-semibold"
+                : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+            }`}
+          >
+            <Trophy className={`w-5 h-5 ${pathname?.startsWith("/dashboard/contests") ? "text-indigo-600" : "text-slate-400"}`} />
+            Contests & CP
           </Link>
           <Link
             href="/dashboard/profile"

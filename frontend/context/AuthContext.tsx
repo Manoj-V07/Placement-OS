@@ -29,6 +29,8 @@ export interface UserProfile {
   lastViewedSkillId?: string | null;
   lastViewedTopicId?: string | null;
   plannerStartDate?: string | null;
+  leetcodeUsername?: string | null;
+  codechefUsername?: string | null;
   createdAt?: string;
 }
 

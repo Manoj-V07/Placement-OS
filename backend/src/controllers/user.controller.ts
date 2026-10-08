@@ -17,6 +17,8 @@ const profileSchema = Joi.object({
   lastViewedSkillId: Joi.string().allow('', null),
   lastViewedTopicId: Joi.string().allow('', null),
   plannerStartDate: Joi.string().pattern(/^\d{4}-\d{2}-\d{2}$/).allow('', null).optional(),
+  leetcodeUsername: Joi.string().allow('', null).optional(),
+  codechefUsername: Joi.string().allow('', null).optional(),
 });
 
 export const getProfile = async (req: AuthRequest, res: Response, next: NextFunction): Promise<void> => {

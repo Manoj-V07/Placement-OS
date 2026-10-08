@@ -49,6 +49,8 @@ export default function ProfilePage() {
   const [dailyStudyTarget, setDailyStudyTarget] = useState<number>(180);
   const [phoneUsageLimit, setPhoneUsageLimit] = useState<number>(60);
   const [phoneUsageReal, setPhoneUsageReal] = useState<number>(0);
+  const [leetcodeUsername, setLeetcodeUsername] = useState("");
+  const [codechefUsername, setCodechefUsername] = useState("");
 
   useEffect(() => {
     if (profile) {
@@ -59,6 +61,8 @@ export default function ProfilePage() {
       setDailyStudyTarget(profile.dailyStudyTarget || 180);
       setPhoneUsageLimit(profile.phoneUsageLimit || 60);
       setPhoneUsageReal(profile.phoneUsageReal || 0);
+      setLeetcodeUsername(profile.leetcodeUsername || "");
+      setCodechefUsername(profile.codechefUsername || "");
     }
   }, [profile]);
 
@@ -80,6 +84,8 @@ export default function ProfilePage() {
         dailyStudyTarget: Number(dailyStudyTarget) || 0,
         phoneUsageLimit: Number(phoneUsageLimit) || 0,
         phoneUsageReal: Number(phoneUsageReal) || 0,
+        leetcodeUsername: leetcodeUsername.trim() || null,
+        codechefUsername: codechefUsername.trim() || null,
         lastPhoneSyncDate: new Date().toISOString()
       });
 
@@ -216,6 +222,24 @@ export default function ProfilePage() {
                 </span>
                 <span className={`font-display font-bold text-xl ${(profile?.phoneUsageReal || 0) > (profile?.phoneUsageLimit || 60) ? "text-rose-600" : "text-emerald-600"}`}>
                   {profile?.phoneUsageReal ?? 0} mins
+                </span>
+              </div>
+
+              <div className="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-1">
+                  LeetCode Handle
+                </span>
+                <span className="font-semibold text-base text-slate-900">
+                  {profile?.leetcodeUsername ? `@${profile.leetcodeUsername}` : <span className="text-slate-400 font-normal">Not connected</span>}
+                </span>
+              </div>
+
+              <div className="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-1">
+                  CodeChef Handle
+                </span>
+                <span className="font-semibold text-base text-slate-900">
+                  {profile?.codechefUsername ? `@${profile.codechefUsername}` : <span className="text-slate-400 font-normal">Not connected</span>}
                 </span>
               </div>
 
@@ -358,6 +382,34 @@ export default function ProfilePage() {
                 className="input-field"
                 value={phoneUsageReal}
                 onChange={(e) => setPhoneUsageReal(Number(e.target.value) || 0)}
+              />
+            </div>
+
+            <div>
+              <label className="label flex items-center justify-between">
+                <span>LeetCode Username</span>
+                <span className="text-xs text-slate-400 font-normal">Public handle only, no password</span>
+              </label>
+              <input
+                type="text"
+                className="input-field"
+                placeholder="e.g. tourist or neal_wu"
+                value={leetcodeUsername}
+                onChange={(e) => setLeetcodeUsername(e.target.value)}
+              />
+            </div>
+
+            <div>
+              <label className="label flex items-center justify-between">
+                <span>CodeChef Handle</span>
+                <span className="text-xs text-slate-400 font-normal">Public handle only, no password</span>
+              </label>
+              <input
+                type="text"
+                className="input-field"
+                placeholder="e.g. tourist or chef"
+                value={codechefUsername}
+                onChange={(e) => setCodechefUsername(e.target.value)}
               />
             </div>
           </div>
