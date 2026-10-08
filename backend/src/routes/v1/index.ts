@@ -6,6 +6,7 @@ import dsaRoutes from './dsa.routes';
 import tasksRoutes from './tasks.routes';
 import contestRoutes from './contest.routes';
 import cpRoutes from './cp.routes';
+import projectRoutes from './project.routes';
 
 const router = Router();
 
@@ -16,5 +17,6 @@ router.use('/dsa', dsaRoutes);
 router.use('/tasks', tasksRoutes);
 router.use('/contests', contestRoutes);
 router.use('/cp', cpRoutes);
+router.use('/projects', projectRoutes);
 
 export default router;

@@ -21,4 +21,5 @@ if (!getApps().length) {
 }
 
 export const db = getFirestore();
+db.settings({ ignoreUndefinedProperties: true });
 export const auth = getAuth();
