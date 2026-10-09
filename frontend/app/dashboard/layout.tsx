@@ -75,9 +75,8 @@ export default function DashboardLayout({
 
       {/* Sidebar */}
       <aside
-        className={`fixed inset-y-0 left-0 z-50 w-72 bg-white border-r border-slate-200 transform transition-transform duration-300 ease-in-out flex flex-col ${
-          isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
-        } md:relative md:translate-x-0`}
+        className={`fixed inset-y-0 left-0 z-50 w-72 bg-white border-r border-slate-200 transform transition-transform duration-300 ease-in-out flex flex-col ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+          } md:relative md:translate-x-0`}
       >
         <div className="h-16 flex items-center justify-between px-6 border-b border-slate-100 md:justify-start">
           <Link href="/dashboard" className="flex items-center gap-2.5">
@@ -99,80 +98,73 @@ export default function DashboardLayout({
         <nav className="flex-1 px-4 py-6 space-y-1.5 overflow-y-auto">
           <Link
             href="/dashboard"
-            className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${
-              pathname === "/dashboard"
-                ? "bg-indigo-50 text-indigo-700 shadow-sm border border-indigo-100 font-semibold"
-                : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
-            }`}
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${pathname === "/dashboard"
+              ? "bg-indigo-50 text-indigo-700 shadow-sm border border-indigo-100 font-semibold"
+              : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+              }`}
           >
             <LayoutDashboard className={`w-5 h-5 ${pathname === "/dashboard" ? "text-indigo-600" : "text-slate-400"}`} />
             Overview
           </Link>
           <Link
+            href="/dashboard/planner"
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${pathname?.startsWith("/dashboard/planner")
+              ? "bg-indigo-50 text-indigo-700 shadow-sm border border-indigo-100 font-semibold"
+              : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+              }`}
+          >
+            <Calendar className={`w-5 h-5 ${pathname?.startsWith("/dashboard/planner") ? "text-indigo-600" : "text-slate-400"}`} />
+            Daily Planner
+          </Link>
+          <Link
             href="/dashboard/skills"
-            className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${
-              pathname?.startsWith("/dashboard/skills")
-                ? "bg-indigo-50 text-indigo-700 shadow-sm border border-indigo-100 font-semibold"
-                : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
-            }`}
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${pathname?.startsWith("/dashboard/skills")
+              ? "bg-indigo-50 text-indigo-700 shadow-sm border border-indigo-100 font-semibold"
+              : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+              }`}
           >
             <Compass className={`w-5 h-5 ${pathname?.startsWith("/dashboard/skills") ? "text-indigo-600" : "text-slate-400"}`} />
             Skills Roadmap
           </Link>
           <Link
             href="/dashboard/dsa"
-            className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${
-              pathname?.startsWith("/dashboard/dsa")
-                ? "bg-indigo-50 text-indigo-700 shadow-sm border border-indigo-100 font-semibold"
-                : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
-            }`}
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${pathname?.startsWith("/dashboard/dsa")
+              ? "bg-indigo-50 text-indigo-700 shadow-sm border border-indigo-100 font-semibold"
+              : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+              }`}
           >
             <Code2 className={`w-5 h-5 ${pathname?.startsWith("/dashboard/dsa") ? "text-indigo-600" : "text-slate-400"}`} />
             DSA Tracker
           </Link>
           <Link
             href="/dashboard/contests"
-            className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${
-              pathname?.startsWith("/dashboard/contests")
-                ? "bg-indigo-50 text-indigo-700 shadow-sm border border-indigo-100 font-semibold"
-                : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
-            }`}
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${pathname?.startsWith("/dashboard/contests")
+              ? "bg-indigo-50 text-indigo-700 shadow-sm border border-indigo-100 font-semibold"
+              : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+              }`}
           >
             <Trophy className={`w-5 h-5 ${pathname?.startsWith("/dashboard/contests") ? "text-indigo-600" : "text-slate-400"}`} />
             Contests & CP
           </Link>
           <Link
             href="/dashboard/projects"
-            className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${
-              pathname?.startsWith("/dashboard/projects")
-                ? "bg-indigo-50 text-indigo-700 shadow-sm border border-indigo-100 font-semibold"
-                : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
-            }`}
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${pathname?.startsWith("/dashboard/projects")
+              ? "bg-indigo-50 text-indigo-700 shadow-sm border border-indigo-100 font-semibold"
+              : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+              }`}
           >
             <FolderGit2 className={`w-5 h-5 ${pathname?.startsWith("/dashboard/projects") ? "text-indigo-600" : "text-slate-400"}`} />
             Projects & Resume
           </Link>
           <Link
             href="/dashboard/profile"
-            className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${
-              pathname === "/dashboard/profile"
-                ? "bg-indigo-50 text-indigo-700 shadow-sm border border-indigo-100 font-semibold"
-                : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
-            }`}
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${pathname === "/dashboard/profile"
+              ? "bg-indigo-50 text-indigo-700 shadow-sm border border-indigo-100 font-semibold"
+              : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+              }`}
           >
             <User className={`w-5 h-5 ${pathname === "/dashboard/profile" ? "text-indigo-600" : "text-slate-400"}`} />
             Profile & Goals
-          </Link>
-          <Link
-            href="/dashboard/planner"
-            className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${
-              pathname?.startsWith("/dashboard/planner")
-                ? "bg-indigo-50 text-indigo-700 shadow-sm border border-indigo-100 font-semibold"
-                : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
-            }`}
-          >
-            <Calendar className={`w-5 h-5 ${pathname?.startsWith("/dashboard/planner") ? "text-indigo-600" : "text-slate-400"}`} />
-            Daily Planner
           </Link>
         </nav>
 
